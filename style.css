@@ -1,33 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div> Arôme caffee</div>
-        <nav>
-            <a href="index.html">
-                Головна
-            </a>
-            <a href="menu.html">
-                Меню
-            </a>
-        </nav>
-    </header>
-    <main>
-        <section class="foto">
-        </section>
-        <section class="about">
-            <h2>Ми...</h2>
-            <P>...будемо раді вам!:)</P>
-        </section>
-    </main>
-    <footer>
-        <p>© 2026 Arôme Coffee.</p>
-    </footer>
-</body>
-</html>
+:root{
+    --primary-color: #3e2723;
+    --accent-color: #d7ccc8;
+    --text-color: #333;
+    --bg-color: #fafafa;
+}
+*{
+
+    margin:0 ;
+    padding:0;
+}
+.body{
+    font-family: 'sans-serif';
+    background: var(--bg-color) ;
+    color: var(--text-color);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 28px;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    font-size: 26px;
+}
+nav{
+    display: flex;
+    gap: 30px;    
+}
+nav a{
+    display: flex;
+    color: #e1e7a4;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer{
+    background-color: var(--primary-color);
+    color:#e4d9d9
+}
+footer p{
+    text-align: center;
+    padding: 25px 0;
+    font-size: 24px;
+}
+.foto{
+    background-image: url(img/68a1bd03ec9a06027aca88cb82eed6f9.jpg);
+    background-size:cover ;
+    height:100vh ;
+}
+.about{
+    text-align: center;
+    padding: 30px;
+    margin: 25px;
+    font-size: 28px;
+}
+.about h2{
+    color: var(--primary-color); 
+    margin-bottom: 15px; 
+}
+.about p{
+    font-size:25px ;
+}
+nav a:hover{
+    color: white;
+}
+
+.menu{
+     background-image: url("https://i.pinimg.com/736x/e3/0a/f9/e30af97b220eaa0fe596b83cbe461612.jpg");
+    background-size:cover ;
+    height:100vh;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 1);
+
+}
+
+.menu-img{
+    text-align: center;
+    margin-bottom: 50px;   
+}
+
+.menu-title{
+    text-align: center;
+    padding: 80px 0 20px 0;
+    color: var(--primary-color);
+    font-size: 60px;
+    color: #ffffff;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.menu-item{
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--text-color);
+    color: #ffffff;
+    
+}
+
+.menu-item_title{
+    margin: 15px;
+    color: var(--primary-color);
+    font-size: 25px;
+    color: #ffffff;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+ul{
+    list-style-type: circle;
+    color: #ffffff;
+    font-family: bold;
+    padding: 30px;
+}
